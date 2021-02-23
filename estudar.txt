@@ -1,0 +1,2 @@
+jsf
+pl/sql/ejb/servidor de aplicacao weblogic, jsf-primefaces

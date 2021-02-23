@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {         
+  document.write("<br>");       
+}				
+function mostra(texto) {
+  document.write(texto);          
+  pulaLinha();
+}
+function tipoTriangulo (a, b, c) {
+	if (a == b && b == c) {
+	return "TRIANGULO EQUILATERO"
+	} else if (a != b && b != c && c != a) {
+	return "TRIANGULO ESCALENO";
+	} else {
+	return "TRIANGULO ISÓSCELE"
+	}
+}
+
+let a = Number(window.prompt("informe o primeiro valor"));
+let b = Number(window.prompt("informe o segundo valor para"));
+let c = Number(window.prompt("informe o terceiro valor para"));
+
+mostra(tipoTriangulo(a, b, c));
+</script>
+
+
+
+
+

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+  document.write("<br>");
+}
+
+function mostra(texto) {
+  document.write(texto);
+  pulaLinha();
+}
+
+function obtemNumeros() {
+let lista = []
+  let totalNumeros = Number(prompt("quantos numeros quer informar?"));
+  for (let n = 0; n < totalNumeros; n++) {
+    let numeroDoUsuario = Number(prompt("Digite o numero ("+ n +"):"));
+    lista.push(numeroDoUsuario);
+  }
+  return lista;
+}
+
+function calculaMedia(array) {  
+  let soma = 0;
+  for (let n = 0; n <array.length; n++) {
+	soma = soma + array[n];
+      }
+return soma/array.length;
+}
+
+mostra("a média entre os valores informados é: " + calculaMedia(obtemNumeros()));
+</script>

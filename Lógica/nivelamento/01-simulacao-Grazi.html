@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+  document.write("<br>");
+}
+function mostra(texto) {
+  document.write(texto);
+  pulaLinha();
+}
+function precoMaca(numeroMaca) {
+	if (numeroMaca<=12) {
+	return numeroMaca*0.30;
+	} else {
+	return numeroMaca*0.25;
+	}
+}
+
+  let numeroMaca = Number(prompt("quantas macas quer comprar?"));
+  mostra("você vai pagar R$" + precoMaca(numeroMaca));
+
+</script>
+
+
